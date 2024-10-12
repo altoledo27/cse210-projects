@@ -7,18 +7,18 @@ class Program
         Address address1 = new Address("123 Main St", "New York", "NY", "USA");
         Address address2 = new Address("456 Maple Ave", "Toronto", "ON", "Canada");
 
-        // Crear clientes
+        
         Customer customer1 = new Customer("John Doe", address1);
         Customer customer2 = new Customer("Jane Smith", address2);
 
-        // Crear productos
+        
         Product product1 = new Product("Laptop", "A123", 1000, 1);
         Product product2 = new Product("Mouse", "B456", 25, 2);
         Product product3 = new Product("Keyboard", "C789", 50, 1);
         Product product4 = new Product("Monitor", "D012", 200, 1);
         Product product5 = new Product("Webcam", "E345", 75, 1);
 
-        // Crear órdenes y agregar productos
+      
         Order order1 = new Order(customer1);
         order1.AddProduct(product1);
         order1.AddProduct(product2);
@@ -28,7 +28,7 @@ class Program
         order2.AddProduct(product4);
         order2.AddProduct(product5);
 
-        // Mostrar información de las órdenes
+        
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
         Console.WriteLine($"Total Cost: ${order1.GetTotalCost()}\n");

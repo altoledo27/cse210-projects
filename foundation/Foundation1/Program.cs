@@ -21,10 +21,10 @@ class Program
         video3.AddComment(new Comment("@princessmarin751", "Im not a member of this church! but i love the teachings about the Life of Jesus Christ."));
         video3.AddComment(new Comment("@ErickHansenHaiTech", "The prophet of our times personally knows the importance of forgiveness. What a powerful example!"));
 
-        // Create a list of videos
+       
         List<Video> videos = new List<Video> { video1, video2, video3 };
 
-        // Display the information of each video
+        
         foreach (var video in videos)
         {
             video.DisplayVideoInfo();
