@@ -1,25 +1,25 @@
 class Product
 {
-    private string name;
-    private string productId;
-    private double price;
-    private int quantity;
+    private string _name;
+    private string _productId;
+    private double _price;
+    private int _quantity;
 
     public Product(string name, string productId, double price, int quantity)
     {
-        this.name = name;
-        this.productId = productId;
-        this.price = price;
-        this.quantity = quantity;
+        _name = name;
+        _productId = productId;
+        _price = price;
+        _quantity = quantity;
     }
 
     public double GetTotalCost()
     {
-        return price * quantity;
+        return _price * _quantity;
     }
 
     public string GetPackingLabel()
     {
-        return $"{name} (ID: {productId})";
+        return $"{_name} (ID: {_productId})";
     }
 }

@@ -8,8 +8,8 @@ class Program
         Address address2 = new Address("456 Maple Ave", "Toronto", "ON", "Canada");
 
         
-        Customer customer1 = new Customer("John Doe", address1);
-        Customer customer2 = new Customer("Jane Smith", address2);
+        Customer customer1 = new Customer("Roberto Gonzalez", address1);
+        Customer customer2 = new Customer("Hector Fernandez", address2);
 
         
         Product product1 = new Product("Laptop", "A123", 1000, 1);
