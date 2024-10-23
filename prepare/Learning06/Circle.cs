@@ -2,7 +2,7 @@ public class Circle : Shape
 {
     private double _radius;
 
-    public void SetRadius(double radio)
+    public Circle(string color, double radio): base(color)
     {
         _radius = radio;
     }

@@ -5,17 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Square shape1 = new Square();
-        shape1.SetColor("Yellow");
-        shape1.SetSide(4);
+        Square shape1 = new Square("Yellow", 4);
 
-        Rectangle shape2 = new Rectangle();
-        shape2.SetColor("Red");
-        shape2.SetSides(4, 5);
+        Rectangle shape2 = new Rectangle("Blue", 4.7, 8);
 
-        Circle shape3 = new Circle();
-        shape3.SetColor("Blue");
-        shape3.SetRadius(6);
+        Circle shape3 = new Circle("Green", 7);
 
         //DisplayShapeInformation(shape1);
         //DisplayShapeInformation(shape2);

@@ -4,7 +4,7 @@ public class Rectangle : Shape
     private double _lenght;
     private double _width;
 
-    public void SetSides(double lenght, double width)
+    public Rectangle(string color, double lenght, double width) : base(color)
     {
         _lenght = lenght;
         _width = width;
